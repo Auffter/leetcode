@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="891cb7f2-f977-482b-a1b7-9dbe9fc639fc" name="Changes" comment="Initial commit">
+    <list default="true" id="891cb7f2-f977-482b-a1b7-9dbe9fc639fc" name="Changes" comment="Added few solutions">
+      <change afterPath="$PROJECT_DIR$/src/1752-ArraySortedAndRotated/arrsortrotated.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1752-ArraySortedAndRotated/arrsortsotated.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,64 +56,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Jest.isArraySpecial.returns false for array with consecutive odd numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.romantointeger.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.specialarray.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.returns false for array with consecutive even numbers (1).executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.returns false for array with consecutive even numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.returns false for array with consecutive odd numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.returns true for array with alternating odd and even numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.isArraySpecial.returns true for array with alternating parity.executor&quot;: &quot;Run&quot;,
-    &quot;Mocha.src\\3151-SpecialArrayI\\specialarray.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.addtwonumbers.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.asd.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.romantointeger.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.specialarray.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.twosum.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/proj/leetcode&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/user/Documents/proj/leetcode/node_modules/jest&quot;,
-    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;C:/Users/user/Documents/proj/leetcode/node_modules/mocha&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\user\\Documents\\proj\\leetcode\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Jest.arrsortsotated.test.js.ts.executor": "Run",
+    "Jest.arrsortsotated.test.ts.executor": "Run",
+    "Jest.isArraySpecial.returns false for array with consecutive odd numbers.executor": "Run",
+    "Jest.romantointeger.test.ts.executor": "Run",
+    "Jest.specialarray.test.ts.executor": "Run",
+    "Mocha.isArraySpecial.executor": "Run",
+    "Mocha.isArraySpecial.returns false for array with consecutive even numbers (1).executor": "Run",
+    "Mocha.isArraySpecial.returns false for array with consecutive even numbers.executor": "Run",
+    "Mocha.isArraySpecial.returns false for array with consecutive odd numbers.executor": "Run",
+    "Mocha.isArraySpecial.returns true for array with alternating odd and even numbers.executor": "Run",
+    "Mocha.isArraySpecial.returns true for array with alternating parity.executor": "Run",
+    "Mocha.src\\3151-SpecialArrayI\\specialarray.test.ts.executor": "Run",
+    "Node.js.addtwonumbers.ts.executor": "Run",
+    "Node.js.asd.ts.executor": "Run",
+    "Node.js.romantointeger.ts.executor": "Run",
+    "Node.js.specialarray.ts.executor": "Run",
+    "Node.js.twosum.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/user/Documents/proj/leetcode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Users/user/Documents/proj/leetcode/node_modules/jest",
+    "nodejs.mocha.mocha_node_package_dir": "C:/Users/user/Documents/proj/leetcode/node_modules/mocha",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\user\\Documents\\proj\\leetcode\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="isArraySpecial.returns false for array with consecutive odd numbers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/3151-SpecialArrayI/specialarray.test.ts" />
-      <test-names>
-        <test-name value="isArraySpecial" />
-        <test-name value="returns false for array with consecutive odd numbers" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Jest.isArraySpecial.returns false for array with consecutive odd numbers" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -143,6 +127,8 @@
       <workItem from="1738437350484" duration="400000" />
       <workItem from="1738437760573" duration="4034000" />
       <workItem from="1738445576597" duration="683000" />
+      <workItem from="1738446277523" duration="414000" />
+      <workItem from="1738492430195" duration="3431000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -160,7 +146,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738446136649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor changes">
+      <option name="closed" value="true" />
+      <created>1738446304179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738446304179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added problem 0001-TwoSum">
+      <option name="closed" value="true" />
+      <created>1738446427342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738446427342</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added few solutions">
+      <option name="closed" value="true" />
+      <created>1738446492150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738446492150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +199,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Minor changes" />
+    <MESSAGE value="Added problem 0001-TwoSum" />
+    <MESSAGE value="Added few solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added few solutions" />
   </component>
 </project>
