@@ -14,18 +14,19 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
  */
 
-let nums = [3,2,4];
-let target = 6;
+let nums:number[] = [3,2,4];
+let target:number = 6;
 
-function twoSum(nums, target) {
-    let result = [];
-    let numsMap = new Map(nums.map((num, index) => [num, index]));
+export function twoSum(nums:number[], target:number) {
+    let result:number[] | null = [];
+    let numsMap:Map<number, number> = new Map(nums.map((num, index) => [num, index]));
 
     for (let i = 0; i < nums.length; i++) {
-        let diff = target - nums[i];
+        let diff:number = target - nums[i];
+
         if(numsMap.has(diff) && numsMap.get(diff) !== i) {
             result.push(i);
-            result.push(numsMap.get(diff));
+            result.push(numsMap.get(diff) ?? 0);
             return result;
         }
     }
