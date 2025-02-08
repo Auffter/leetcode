@@ -13,10 +13,6 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
  */
-
-let nums:number[] = [3,2,4];
-let target:number = 6;
-
 export function twoSum(nums:number[], target:number) {
     let result:number[] | null = [];
     let numsMap:Map<number, number> = new Map(nums.map((num, index) => [num, index]));
@@ -43,5 +39,3 @@ export function twoSum(nums:number[], target:number) {
 
     return result;
 }
-
-console.log(twoSum(nums, target));
