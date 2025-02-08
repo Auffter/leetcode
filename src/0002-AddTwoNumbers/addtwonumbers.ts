@@ -10,7 +10,9 @@
  * }
  */
 
-class ListNode {
+// Could use some optimization :)
+
+export class ListNode {
     val: number
     next: ListNode | null
     constructor(val?: number, next?: ListNode | null) {
@@ -19,23 +21,19 @@ class ListNode {
     }
 }
 
-// Example input data
-let l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
-let l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-
-// Function to print the linked list
-function printList(node: ListNode | null) {
-    let output = [];
-    while (node !== null) {
-        output.push(node.val);
-        node = node.next;
+function createLinkedList(arr: number[]): ListNode | null {
+    let dummy = new ListNode(0);
+    let current = dummy;
+    for (let num of arr) {
+        current.next = new ListNode(num);
+        current = current.next;
     }
-    console.log(output);
+    return dummy.next;
 }
 
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-    let value1:string = '';
-    let value2:string = '';
+export function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+    let value1:string = "";
+    let value2:string = "";
 
     while (l1 !== null) {
         value1 = value1.concat(l1.val.toString());
@@ -47,12 +45,12 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
         l2 = l2.next;
     }
 
-    console.log(value1);
-    console.log(value2);
+    let revValue1:string = value1.split('').reverse().join('');
+    let revValue2:string = value2.split('').reverse().join('');
 
-    return null;
+    let result:bigint = BigInt(revValue1) + BigInt(revValue2);
+    let revResult:string = result.toString().split('').reverse().join('');
+    let revResultArr:number[] = revResult.split('').map(Number);
+
+    return createLinkedList(revResultArr);
 }
-
-printList(l1) // Output: [2, 4, 3]
-printList(l2); // Output: [5, 6, 4]
-addTwoNumbers(l1, l2);
