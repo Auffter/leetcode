@@ -40,4 +40,11 @@ describe('addTwoNumbers', () => {
         let result = addTwoNumbers(l1, l2);
         expect(linkedListToArray(result)).toEqual([8, 9, 9, 9, 0, 0, 0, 1]);
     });
+
+    test('returns [6, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] for l1 = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1] and l2 = [5,6,4]', () => {
+        let l1 = createLinkedList([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]);
+        let l2 = createLinkedList([5,6,4]);
+        let result = addTwoNumbers(l1, l2);
+        expect(linkedListToArray(result)).toEqual([6, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]);
+    });
 });
