@@ -14,11 +14,6 @@ export function lengthOfLongestSubstring(s: string): number {
         maxLength = Math.max(maxLength, i - prevElement + 1);
 
         map.set(c, i);
-        //console.log(map);
     }
     return maxLength;
 }
-
-// lengthOfLongestSubstring("abcabcbb");
-// lengthOfLongestSubstring("bbbbb");
-// lengthOfLongestSubstring("pwwkew");
